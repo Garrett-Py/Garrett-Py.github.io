@@ -1,0 +1,549 @@
+/*This css loads if the other CSS files don't load. This is the desktop CSS file.*/
+
+:root {
+font-size:  16px;
+font-family: "Computer Modern Sans", sans-serif;
+--text-primary: #b6b6b6;
+--text-secondary: #ececec;
+--bg-primary: #23232e;
+--bg-secondary: #141418;
+scroll-behavior: smooth; 
+}
+
+html, body {
+overflow-x: hidden;
+} 
+	
+body {
+color: white;
+background-color: var(--bg-secondary);
+margin: 0;
+padding: 0;
+}
+	
+body::-webkit-scrollbar {
+width: 0.6rem;
+}
+	
+body::webkit-scrollbar-track {
+background: #1e1e24
+}
+	
+body::-webkit-scrollbar-thumb {
+background: #bbbbbb
+}
+	
+.navbar {
+width: 4rem;
+height: 100vh;
+position: fixed;
+margin: 0;
+background-color: var(--bg-primary);
+}
+	
+.navbar-nav {
+list-style:none;
+padding: 0;
+margin: 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+	
+.nav-link {
+display: flex;
+align-items: center;
+height: 4rem;
+color: var(--text-primary);
+text-decoration: none;
+filter: opacity(1);
+transition: 200ms ease;
+}
+	
+.nav-link:hover {
+filter: opacity(1) brightness(1.5);
+background: var(--bg-primary);
+color: var(--text-secondary);
+}
+	
+.nav-link svg {
+min-width: 2rem;
+max-width: 4rem;
+min-height: 2rem;
+max-height: 4rem;
+fill: #dddddd;
+}
+	
+.link-text {
+font-size: 0.6em;
+position: fixed;
+top: 3rem;
+width: 4rem;
+text-align: center;
+}
+
+.contact-location {
+position: fixed;
+bottom: 15px;
+}
+
+
+
+
+	
+	
+	
+main {
+margin-left: 4rem;
+height: 100vh;
+border-bottom: 12px solid var(--bg-primary);
+background-size: 100% 100%;
+}
+	
+main #main-name {
+position: absolute;
+top: 65%;
+left: calc(50% - 5.25ch);
+font-size: 5rem;
+font-family: Serif;
+min-width: 14ch;
+} 
+	
+main #main-dropdown {
+position: absolute;
+left: 3.4rem; 
+right: 0; 
+margin-left: auto; 
+margin-right: auto; 
+height: 9%;
+width: 9%;
+top: calc(55% - 8rem);
+justify-content: center;
+font-size: 2rem;
+font-family: Serif;
+}
+
+
+	
+	
+	/*MAIN PAGE BACKGROND*/
+main #main-background {
+width: 100%;
+height: 100%;
+}
+	
+main #main-banner1 {
+background: linear-gradient(rgba(0, 0, 0, 0.2) 0%,rgba(0, 0, 0, 0.2) 100%);
+position: absolute;
+top: 65%;
+height: 6rem;
+width: calc(100% - 4rem);
+backdrop-filter: blur(2px);
+}
+	
+	
+main #main-banner2 {
+position: absolute;
+left: calc(15% + 4rem);
+width: 3px;
+height: 100vh;
+background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 4px, rgba(0, 0, 0, 0) 0%);
+background-position: left;
+background-size: 4px 2%;
+background-repeat: repeat-y;
+}
+	
+	
+main :is(#main-banner3, #main-banner4, #main-banner5) {
+position: absolute;
+left: calc(15% + 4rem);
+width: 3px;
+height: 100vh;
+background-image: linear-gradient(to bottom, rgba(255, 0, 0, 1) 3px, rgba(0, 0, 0, 0) 0%);
+background-position: left;
+background-size: 3px 2%;
+background-repeat: no-repeat;
+visibility: hidden;
+}
+	
+main #main-banner3 {
+animation: anim1 10s steps(51) infinite;	
+} @keyframes anim1 {from {top: -50%; visibility: visible;} to {top: 52%}}
+	
+main #main-banner4 {
+animation: anim1 10s steps(51) 0.2s infinite;
+} 
+	
+main #main-banner5 {
+animation: anim1 10s steps(51) 0.4s infinite;
+}
+
+
+.section-row {
+border-bottom: 12px solid var(--bg-primary);
+margin-left: 4rem;
+padding: 3.5rem;
+background-color: var(--bg-secondary);
+}
+
+
+
+
+
+
+
+
+#r1 div {
+display: flex;
+flex-direction: column;
+place-items: center;
+}
+
+#r1 h1 {
+text-align: center;
+font-size: 2.3em;
+}
+
+#r1 p {
+width: 31.25rem;
+text-align: left;
+}
+
+
+
+
+
+
+
+#r2 {
+min-height: 30rem; 
+}
+
+#r2 h1 {
+text-align: center;
+font-size: 2.3em;
+}
+
+#r2 table {
+border-collapse: collapse;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+
+#r2 td {
+/*border: 1pt solid white;*/
+height: 3rem;
+min-width: 3rem;
+vertical-align: middle;
+padding-bottom: 20px;
+}
+
+#r2 #r2-spacing1 {
+height: 5vh;
+}
+
+#r2 .TabIcon {
+width:50px;
+height:50px;
+border-radius:25px;
+background-color:gray;
+font-size:18px;
+font-weight:1000;
+display:table-cell;
+vertical-align:middle;
+}
+
+#r2 .TabIcon1 {
+background-color:#3792CB;
+}
+
+#r2 .TabIcon2 {
+background-color:#E74C3C;
+}
+
+#r2 .TabIcon3 {
+background-color:#E69500;
+}
+
+#r2 .TabIcon4 {
+background-color:#8B8589;
+}
+
+#r2 .TabIcon5 {
+background-color:#000000;
+}
+
+#r2 .TabIcon6 {
+background-color:#306998;
+}
+
+#r2 .TabIcon7 {
+background-color:#E64A19;
+font-size: 12px;
+}
+
+#r2 .TabIcon8 {
+background-color:#6E64C3;
+}
+
+
+
+
+
+
+
+.Experience {
+margin-left: 4rem;
+padding: 3.5rem;
+background-color: var(--bg-secondary);
+border-bottom: 12px solid var(--bg-primary);
+--width1: 550px;
+}
+
+.Experience h1 {
+text-align: center;
+font-size: 2.3em;
+}
+
+
+
+.Experience #img-magna {
+position: relative;
+width: 500px;
+height: 400px;
+left: calc(-20rem + 60%);
+}
+
+
+.Experience #magna-header {
+position: relative;
+left: 1rem;
+top: 2rem;
+min-width: 50ch;
+font-size: 1.5rem;
+text-decoration: underline 1pt;
+}
+
+.Experience #text-magna {
+position: relative;
+left: 1rem;
+top: 2rem;
+width: 100%;
+font-size: 100%;
+}
+
+
+.Experience #img-lg {
+position: relative;
+width: 500px;
+height: 400px;
+left: calc(-20rem + 60%);
+}
+
+
+.Experience #lg-header {
+position: relative;
+left: 1rem;
+top: 2rem;
+font-size: 1.5rem;
+text-decoration: underline 1pt;
+}
+
+.Experience #text-lg {
+left: 1rem;
+top: 3rem;
+position: relative;
+font-size: 100%;
+max-width: 95%;
+}
+
+.Experience #exp-collect {
+background-color: rgba(0, 0, 0, 0.2);
+padding: 2rem;
+margin: 1rem;
+max-height: 450px;
+padding-bottom: 15rem;
+}
+
+
+
+
+#r4 {
+position: relative;
+}
+
+#r4:before {
+content: ' ';
+z-index: 1;
+display: block;
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+opacity: 0.1;
+background-image: url("/img/edu1.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: calc(100% - 4rem) 100%;
+background-position: 4rem 0rem;
+}
+
+#r4 h1 {
+z-index: 2;
+position: relative;
+text-align: center;
+font-size: 2.3em;
+}
+
+#r4 .center-educationbox {
+display: flex;
+align-items: top;
+}
+
+#r4 .edu-col {
+min-width: 50%;
+
+}
+
+#r4 .edu-centertext {
+display: flex;
+justify-content: center;
+margin-left: -5%;
+}
+
+#r4 .edu-indent {
+position: relative;
+margin-left: auto;
+margin-right: auto;
+max-width: 70%;
+}
+
+#r4 .thesis {
+position: relative;
+top: 3rem;
+}
+
+#r4 .thesis-width {
+position: relative;
+margin-left: auto;
+margin-right: auto;
+max-width: 50%;
+}
+
+#r4 .thesis-linkContainter {
+margin-left: -2rem;
+margin-top: 6rem;
+display: flex;
+justify-content: center;
+position: relative;
+}
+
+#r4 .thesis-pdflink {
+z-index: 2;
+width: 170px;
+height: 40px;
+background-color: rgba(0, 0, 0, 0);
+border: 2.5pt solid rgba(255, 70, 70, 0.7);
+display: flex;
+align-items: center;
+justify-content: center;
+color: rgba(255, 70, 70, 1);
+text-decoration: none;
+background: rgba(0,0,0,0.4);
+font-weight: bold;
+transition: all 0.8s;
+}
+
+#r4 .thesis-pdflink:after {
+z-index: -1;
+position: absolute;
+content: "";
+margin-left: -170px;
+height: 40px;
+background:  rgba(0,0,0,0.7);
+width: 1px;
+transform: translateX(0px) scaleX(0);
+transition: all 1.3s;
+}
+
+#r4 .thesis-pdflink:hover {
+color: rgba(145, 145, 226, 1);
+border: 2.5pt solid rgb(145, 145, 226);
+transition: all 0.8s;
+}
+
+#r4 .thesis-pdflink:hover:after{
+width: 1px;
+transform: translateX(85px) scaleX(170);
+transition: transform 0.8s;
+}
+
+
+
+
+
+#r5 {
+min-height: 100rem;  
+--proj-width: 115%;
+--proj-spacing: calc(-25% - 4rem);
+}
+
+#r5 h1 {
+text-align: center;
+font-size: 2.3em;
+}
+
+#r5 .proj-vspace-header {
+height: 5vh;
+}
+
+#r5 .center-projectbox {
+display: flex;
+align-items: top;
+flex-direction: column;
+margin-top: -30px;
+}
+
+#r5 .proj-img {
+width: var(--proj-width);
+}
+
+#r5 .proj-leftbox {
+position: relative;
+left: calc(40% - var(--proj-width)/2 - var(--proj-spacing) );
+max-width: 55%;
+margin-bottom: 50px;
+}
+
+#r5 .proj-rightbox {
+position: relative;
+left: calc(40% - var(--proj-width)/2 - var(--proj-spacing) );
+max-width: 55%;
+margin-bottom: 20px;
+}
+
+#r5 :is(.proj-txt1, .proj-txt2) {
+max-width: var(--proj-width);
+}
+
+#r5 .proj-vspace {
+height: 10vh;
+}
+
+
+
+
+
+
+#r7 {
+height: 0vh;
+margin-left: 4rem;
+padding: 3.5rem;
+background-color: var(--bg-primary);
+}
+
+
+
