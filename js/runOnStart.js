@@ -1,0 +1,4 @@
+
+function runOnStart() {
+colorFunc11();
+}

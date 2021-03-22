@@ -1,9 +1,44 @@
+/**************************************
+
+This Javascript file is used to color things.
+
+***************************************/
+
+
+
+
+
+
+
+
+
+
+
+/**************************************
+
+Colors 
+
+***************************************/
 var color1 = "#d394ff";
 var color2 = "#dddddd";
 
 
 
 
+
+
+
+
+
+
+
+/**************************************
+
+Function to tell how much the user scrolled.
+Also, calls functions to color icons based 
+upon how much they have scrolled.
+
+***************************************/
 function isScrolling() {
 var totalScroll = window.pageYOffset || document.body.scrollTop || document.documentElement.scrollTop;
 var height = document.documentElement.scrollHeight - document.getElementById("r0").clientHeight;
@@ -56,8 +91,6 @@ colorFunc61();
 if (scrolled < (document.getElementById("r0").clientHeight + document.getElementById("r1").clientHeight + document.getElementById("r2").clientHeight + document.getElementById("r3").clientHeight + document.getElementById("r4").clientHeight)/height) {
 colorFunc62();
 }
-
-
 }
 
 
@@ -66,7 +99,11 @@ colorFunc62();
 
 
 
+/**************************************
 
+Functions used to color icons. 
+
+***************************************/
 
 function colorFunc11() {
 document.getElementById("svgId01").style.fill = color1;
