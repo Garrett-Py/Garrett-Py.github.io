@@ -60,12 +60,11 @@ filter: opacity(1);
 transition: 200ms ease;
 }
 
-@media(hover: hover) and (pointer: fine) {
+
 .nav-link:hover {
 filter: opacity(1) brightness(1.5);
 background: var(--bg-primary);
 color: var(--text-secondary);
-}
 }
 	
 .nav-link svg {
