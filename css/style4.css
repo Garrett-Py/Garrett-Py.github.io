@@ -39,6 +39,7 @@ height: 100vh;
 position: fixed;
 margin: 0;
 background-color: var(--bg-primary);
+z-index: 1;
 }
 	
 .navbar-nav {
@@ -103,27 +104,39 @@ background-size: 100% 100%;
 	
 main #main-name {
 position: absolute;
-top: 65%;
-left: calc(50% - 5.25ch);
+top: 30%;
+left: calc(50% - 5.4ch);
 font-size: 5rem;
 font-family: Serif;
 min-width: 14ch;
+z-index: 0;
 } 
 	
 main #main-dropdown {
 position: absolute;
-left: 3.4rem; 
+left: 4rem; 
 right: 0; 
 margin-left: auto; 
 margin-right: auto; 
-height: 9%;
-width: 9%;
-top: calc(55% - 8rem);
+height: 6%;
+width: 6%;
+top: calc(85% - 4% - 12px);
 justify-content: center;
-font-size: 2rem;
-font-family: Serif;
 }
 
+main #contact-icons {
+position: absolute;
+top: 50%;
+left: 4rem; 
+right: 0; 
+margin-left: auto; 
+margin-right: auto; 
+width: 35%;
+min-width: 580px;
+max-width: 800px;
+display: flex;
+justify-content: space-between;
+}
 
 	
 	
@@ -136,7 +149,7 @@ height: 100%;
 main #main-banner1 {
 background: linear-gradient(rgba(0, 0, 0, 0.2) 0%,rgba(0, 0, 0, 0.2) 100%);
 position: absolute;
-top: 65%;
+top: 30%;
 height: 6rem;
 width: calc(100% - 4rem);
 backdrop-filter: blur(2px);
@@ -442,7 +455,7 @@ justify-content: center;
 position: relative;
 }
 
-#r4 .thesis-pdflink {
+.thesis-pdflink {
 z-index: 2;
 width: 170px;
 height: 40px;
@@ -458,7 +471,7 @@ font-weight: bold;
 transition: all 0.8s;
 }
 
-#r4 .thesis-pdflink:after {
+.thesis-pdflink:after {
 z-index: -1;
 position: absolute;
 content: "";
@@ -470,13 +483,13 @@ transform: translateX(0px) scaleX(0);
 transition: all 1.3s;
 }
 
-#r4 .thesis-pdflink:hover {
+.thesis-pdflink:hover {
 color: rgba(145, 145, 226, 1);
 border: 2.5pt solid rgb(145, 145, 226);
 transition: all 0.8s;
 }
 
-#r4 .thesis-pdflink:hover:after{
+.thesis-pdflink:hover:after{
 width: 1px;
 transform: translateX(85px) scaleX(170);
 transition: transform 0.8s;
