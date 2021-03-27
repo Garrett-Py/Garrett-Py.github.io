@@ -352,7 +352,7 @@ text-decoration: underline 1pt;
 }
 
 .Experience #text-lg {
-top: -400px;
+top: calc(-400px + 1rem);
 position: relative;
 font-size: 100%;
 max-width: calc(95% - var(--width1) - 20px);
