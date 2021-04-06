@@ -518,7 +518,7 @@ align-items: top;
 
 #r5 .proj-img {
 width: var(--proj-width);
-max-height: 300px;
+height: 17vw;
 }
 
 #r5 .proj-leftbox {
