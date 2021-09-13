@@ -452,6 +452,13 @@ justify-content: center;
 position: relative;
 }
 
+.thesis-weblink {
+z-index: 2;
+position: relative;
+color: rgba(145, 145, 226, 1);
+text-decoration: none;
+}
+
 .thesis-pdflink {
 z-index: 2;
 width: 170px;
