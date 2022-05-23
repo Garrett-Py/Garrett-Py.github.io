@@ -71,8 +71,8 @@ color: var(--text-secondary);
 }
 	
 .nav-link svg {
-max-width: 3rem;
-max-height: 4rem;
+width: 4rem;
+height: 4rem;
 fill: #dddddd;
 display: block;
 margin: -0.5rem;

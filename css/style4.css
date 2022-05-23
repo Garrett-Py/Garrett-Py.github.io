@@ -54,6 +54,7 @@ align-items: center;
 .nav-link {
 display: flex;
 align-items: center;
+width: 4rem;
 height: 4rem;
 color: var(--text-primary);
 text-decoration: none;
