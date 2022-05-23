@@ -118,15 +118,7 @@ z-index: 0;
 } 
 	
 main #main-dropdown {
-position: absolute;
-left: 4rem; 
-right: 0; 
-margin-left: auto; 
-margin-right: auto; 
-height: calc(9% + 10px);
-width: calc(9% + 10px);
-top: calc((49% + 170px) + (100% - (49% + 170px))/2);
-justify-content: center;
+display: none;
 }
 
 main #contact-icons {
